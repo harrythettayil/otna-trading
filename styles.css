@@ -1,7 +1,7 @@
 :root {
   --primary-color: #1d1616;
-  --secondary-color: #8e1616;
-  --third-color: #d84040;
+  --secondary-color: #1F3A5F;
+  --third-color: #2E86C1;
   --forth-color: #eeeeee;
   --white: #fff;
   --font-weight-medium: 700;
@@ -48,7 +48,7 @@ a {
   display: flex;
 }
 
-.justify-content-center{
+.justify-content-center {
   justify-content: center;
 }
 
@@ -63,7 +63,8 @@ a {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: url("./assets/images/fluid-bg.jpg") no-repeat center center/cover;
+  background: url("./assets/images/trading-hero.jpeg") no-repeat center
+    center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +72,7 @@ a {
   color: white;
   position: relative;
   overflow: hidden;
+  padding: 160px 16px;
 }
 
 .hero::before {
@@ -89,13 +91,20 @@ a {
 }
 
 .hero h1 {
-  font-size: 64px;
+  font-size: 32px;
   margin-bottom: 16px;
 }
 
 .hero p {
   font-size: 24px;
   margin-bottom: 32px;
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
 }
 
 .btn {
@@ -114,8 +123,6 @@ a {
 /* Services Section */
 .services {
   text-align: center;
-  background-color: var(--primary-color);
-  color: var(--white);
 }
 
 .services h2 {
@@ -133,9 +140,9 @@ a {
 .card {
   width: 100%;
   padding: 24px;
-  border: 2px solid var(--secondary-color);
-  border-radius: 6px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card h3 {
@@ -152,7 +159,6 @@ a {
 
 .card-icon {
   width: 40px;
-  filter: invert();
   margin-bottom: 8px;
 }
 
@@ -176,7 +182,7 @@ a {
 
 .about h2,
 .contact h2 {
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 16px;
 }
 
@@ -330,7 +336,9 @@ footer {
 }
 
 .navbar a:hover {
-  text-shadow: 0 0 10px var(--third-color), 0 0 20px var(--third-color),
+  text-shadow:
+    0 0 10px var(--third-color),
+    0 0 20px var(--third-color),
     0 0 30px var(--third-color);
 }
 
@@ -532,6 +540,14 @@ footer {
   width: 100%;
 }
 
+.founder-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 16px auto 0;
+}
+
 /* Desktop styles (min-width: 768px) */
 @media (min-width: 768px) {
   .container {
@@ -570,6 +586,11 @@ footer {
     font-size: 40px;
   }
 
+  .hero-btns {
+    display: flex;
+    flex-direction: row;
+  }
+
   .card {
     width: 25%;
   }
@@ -605,5 +626,20 @@ footer {
 @media (min-width: 991px) {
   .container {
     padding: 80px;
+  }
+
+  .hero {
+   padding: unset;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .about h2,
+  .contact h2 {
+    font-size: 40px;
   }
 }
