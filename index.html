@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700..900&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./assets/images/otna-logo.png" />
+    <title>Otna Infotech</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <img class="logo" src="./assets/images/otna-logo.png" alt="logo" />
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="animated fadeInDown">OTNA Infotech</h1>
+        <p class="animated fadeInUp">You Think it. We Build it.</p>
+        <a href="#services" class="btn animated fadeIn">Explore Our Services</a>
+      </div>
+    </header>
+
+    <section id="services" class="services container">
+      <h2 class="animated">Our Services</h2>
+      <div class="service-cards">
+        <div class="card animated">
+          <img
+            class="card-icon"
+            src="./assets/images/web-design.svg"
+            alt="web-design"
+          />
+          <h3>Web Design</h3>
+          <p>
+            We create stunning and user-friendly designs that captivate your
+            audience.
+          </p>
+        </div>
+        <div class="card animated">
+          <img
+            class="card-icon"
+            src="./assets/images/web-development.svg"
+            alt="web-development"
+          />
+          <h3>Web Development</h3>
+          <p>
+            From simple websites to complex web applications, we've got you
+            covered.
+          </p>
+        </div>
+        <div class="card animated">
+          <img class="card-icon" src="./assets/images/seo.svg" alt="seo" />
+          <h3>SEO Optimization</h3>
+          <p>Boost your online presence with our expert SEO strategies.</p>
+        </div>
+        <div class="card animated">
+          <img
+            class="card-icon"
+            src="./assets/images/marketing.svg"
+            alt="digital marketing"
+          />
+          <h3>Digital Marketing</h3>
+          <p>
+            Maximize your brand's reach with data-driven digital marketing
+            campaigns.
+          </p>
+        </div>
+        <div class="card animated">
+          <img
+            class="card-icon"
+            src="./assets/images/mobile-app.svg"
+            alt="Mobile App Development"
+          />
+          <h3>Mobile App Development</h3>
+          <p>
+            We build intuitive and high-performance mobile applications for iOS
+            and Android.
+          </p>
+        </div>
+        <div class="card animated">
+          <img
+            class="card-icon"
+            src="./assets/images/social-media.svg"
+            alt="social media management"
+          />
+          <h3>Social Media Management</h3>
+          <p>
+            Enhance engagement and grow your audience with our social media
+            expertise.
+          </p>
+        </div>
+        <a class="card animated" href="./leads.html" target="_blank">
+          <img
+            class="card-icon"
+            src="./assets/images/lead-generation.svg"
+            alt="B2B Lead Generation"
+          />
+          <h3>B2B Lead Generation</h3>
+          <p>
+            Gives quick access for businesses with cost-effective B2B Database
+          </p>
+          <div class="btn">Learn more</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="about container">
+      <h2 class="animated">About Us</h2>
+      <p class="animated">
+        We are a team of passionate developers and designers dedicated to
+        delivering top-notch digital solutions.
+      </p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2 class="animated text-center">Lets make something great together!</h2>
+      <form
+        id="form"
+        class="form d-flex"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="fbec8652-3fcd-4e65-807c-7819a8bf26f1"
+        />
+        <input type="hidden" name="subject" value="New Enquiry" />
+        <input type="hidden" name="captcha" value="false" />
+        <section class="left">
+          <div class="input-container">
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+          </div>
+          <div class="input-container">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" />
+          </div>
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input type="text" name="email" />
+          </div>
+        </section>
+        <section class="right">
+          <div class="input-container">
+            <label for="message">Message</label>
+            <textarea name="message" id="" name="message"></textarea>
+            <div class="send-container">
+              <button id="submit" class="btn" type="submit">Send</button>
+            </div>
+          </div>
+        </section>
+      </form>
+      <div id="popup" class="popup">
+        <p>Message Sent Successfully!</p>
+        <button id="closePopup" class="btn" onclick="closePopup()">OK</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="d-flex justify-content-center">
+          <a class="d-flex" href="mailto:infotech.otna@gmail.com"
+            ><img
+              class="contact-icon"
+              src="./assets/images/mail.svg"
+              alt="mail"
+            />
+            infotech.otna@gmail.com</a
+          >
+      </div>
+      <p class="copyright-text">
+        &copy; <span id="year"></span> OTNA Infotech. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="/scripts.js"></script>
+  </body>
+</html>
