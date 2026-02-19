@@ -63,7 +63,7 @@ a {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background: url("./assets/images/trading-hero.jpeg") no-repeat center
+  background: url("assets/images/trading-hero.jpeg") no-repeat center
     center/cover;
   display: flex;
   justify-content: center;
